@@ -21,19 +21,9 @@ h1, h2{
     display: flex;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
-}
-
 button {
     margin-top: 10px;
+    cursor: pointer;
 }
 
 table, th, td{
@@ -65,15 +55,20 @@ td{
     margin: 0 auto;
 }
 
-
-
-
-
-
-
 #vehiculo-form {
     width: 300px;
     padding: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
 }
 
 #vehiculo-form input[type="text"],
@@ -85,6 +80,4 @@ td{
 #vehiculo-form button {
     width: 100px;
     padding: 5px;
-    margin-top: 10px;
-    cursor: pointer;
 }
