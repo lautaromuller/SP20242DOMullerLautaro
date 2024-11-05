@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABM Personas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="titulo-tabla">Formulario Lista</h1>
+    <div id="spinner" class="spinner">Cargando...</div>
+
+    <div id="contenedor-tabla">
+        <table id="tabla-vehiculos">
+            <thead>
+                <tr>
+                    <th class="columnaID">Id</th>
+                    <th>Modelo</th>
+                    <th>Año Fabricación</th>
+                    <th>Velocidad Maxima</th>
+                    <th>Cantidad de puertas</th>
+                    <th>Asientos</th>
+                    <th>Carga</th>
+                    <th>Autonomia</th>
+                    <th>Modificar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="btnAgregar">Agregar Elemento</button>
+    </div>
+
+
+    <div id="contenedor-form" class="modal">
+        <h2 id="titulo-form">Formulario</h2>        
+
+        <form id="vehiculo-form">
+            <label for="id">ID:</label>
+            <input type="text" id="id" required disabled><br>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" required><br>
+
+            <label for="anoFabricacion">Año fabricación:</label>
+            <input type="text" id="anoFabricacion" required><br>
+
+            <label for="velMax">Vel. Maxima:</label>
+            <input type="number" id="velMax" required><br>
+
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="">Selecciona un tipo</option>
+                <option value="auto">Auto</option>
+                <option value="camion">Camión</option>
+            </select><br>
+
+            <label class="lblcantidadPuertas" for="cantidadPuertas">Cantidad puertas:</label>
+            <input type="number" id="cantidadPuertas" disabled><br>
+
+            <label class="lblAsientos" for="asientos">Asientos:</label>
+            <input type="number" id="asientos" disabled><br>
+
+            <label class="lblCarga" for="carga">Carga:</label>
+            <input type="number" id="carga" disabled><br>
+
+            <label class="lblAutonomia" for="autonomia">Autonomia:</label>
+            <input type="number" id="autonomia" disabled><br>
+
+            <button type="submit">Aceptar</button>
+            <button type="button" id="btnCancelar">Cancelar</button>
+        </form>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
